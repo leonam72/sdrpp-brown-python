@@ -1,7 +1,5 @@
-# SDR++Brown Python
-
-> Rebuild completo em Python do [SDR++Brown](https://github.com/sannysanoff/SDRPlusPlusBrown) — receptor SDR multi-VFO com suporte a RTL-SDR V3/V4, espectro FFT, waterfall e demodulação de áudio em tempo real.
-
+# sdrPython
+> Rebuild completo em Python do [SDR++Brown](https://github.com/sannysanoff/SDRPlusPlusBrown) — receptor SDR multi-VFO com suporte a RTL-SDR V3/V4, espectro FFT, waterfall e demodulação de ásdrPython
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python) ![License](https://img.shields.io/badge/License-GPLv3-green) ![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey)
 
 ---
@@ -59,8 +57,7 @@ pip install pyrtlsdr
 ## Uso
 
 ```bash
-python sdrpp_brown.py
-```
+python sdrPython.py```
 
 Se nenhum RTL-SDR estiver conectado, o app inicia automaticamente em **modo demo** com um sinal FM sintético — espectro, waterfall e multi-VFO funcionam imediatamente.
 
@@ -112,8 +109,7 @@ Na aba **⚙ SDR**:
 ## Arquitetura
 
 ```
-sdrpp_brown.py
-├── VFO              # Objeto por canal: freq, modo, BW, demodulação
+sdrPython.py├── VFO              # Objeto por canal: freq, modo, BW, demodulação
 ├── SDRDevice        # Abstração hardware RTL-SDR + modo demo
 ├── make_spectrum()  # Canvas FFT + overlay multi-VFO
 ├── make_waterfall() # Canvas cascata com paleta de cores
